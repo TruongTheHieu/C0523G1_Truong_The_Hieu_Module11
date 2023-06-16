@@ -12,16 +12,25 @@
             color: blue
         }
 
-        div {
+        #form-div {
+            width: 80%;
+            height: 80%;
+            padding-top: 30px;
+        }
+
+        #out-form-div {
             background-color: aqua;
-            width: 600px;
+            width: 500px;
             height: 600px;
         }
 
         form {
-            margin: auto;
-            width: 80%;
-            height: 80%;
+            width: 400px;
+            height: 500px;
+            background-color: white;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 50px;
         }
 
         .item {
@@ -30,62 +39,56 @@
     </style>
 </head>
 <body>
-<div>
-    <form style="background-color: white; margin-top: 50px ">
-        <h1 style="color:white;background-color: red;text-align: left">Sở thích của bạn</h1>
-        <table>
-            <tr>
-                <td class="item"  >Họ và tên</td>
-                <td colspan="2"><input type="text" name="firstname"></td>
+<div id="out-form-div">
+    <form>
+        <div id="inner-form-div">
+            <h1 style="color:white;background-color: red;text-align: left">Sở thích của bạn</h1>
+            <table>
+                <tr>
+                    <td class="item">Họ và tên</td>
+                    <td colspan="2"><input type="text" name="firstname"></td>
 
-                <td></td>
-            </tr>
-
-            </tr>
-            <td class="item">Email</td>
-            <td colspan="2"><input type="text" name="Email"></td>
-            <td></td>
-
-
-            </tr>
-            <tr>
-                <td class="item">Sở thích</td>
-                <td><input type="checkbox" id="sothich1" value="sothich">
-                    <label for="sothich1">Thể thao</label></td>
-                <td><input type="checkbox" id="sothich2" value="sothich">
-                    <label for="sothich2">âm nhạc</label></td>
-                <td><input type="checkbox" id="sothich3" value="sothich">
-                    <label for="sothich3">đọc sách</label></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="checkbox" id="sothich4" value="sothich">
-                    <label for="sothich4">lướt web</label></td>
-                <td><input type="checkbox" id="sothich5" value="sothich">
-                    <label for="sothich5">chơi game</label></td>
-                <td><input type="checkbox" id="sothich6" value="sothich">
-                    <label for="sothich6">điện ảnh</label></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="checkbox" id="sothich7" value="sothich">
-                    <label for="sothich7">du lịch</label></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="gửi thông tin"></td>
-                <td><input type="reset" value="nhập lại"/></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            </tr>
-
-
-        </table>
-
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="item">Email</td>
+                    <td colspan="2"><input type="text" name="Email"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="item">Sở thích</td>
+                    <td><input type="checkbox" id="sothich1" value="sothich">
+                        <label for="sothich1">Thể thao</label></td>
+                    <td><input type="checkbox" id="sothich2" value="sothich">
+                        <label for="sothich2">âm nhạc</label></td>
+                    <td><input type="checkbox" id="sothich3" value="sothich">
+                        <label for="sothich3">đọc sách</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="sothich4" value="sothich">
+                        <label for="sothich4">lướt web</label></td>
+                    <td><input type="checkbox" id="sothich5" value="sothich">
+                        <label for="sothich5">chơi game</label></td>
+                    <td><input type="checkbox" id="sothich6" value="sothich">
+                        <label for="sothich6">điện ảnh</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="sothich7" value="sothich">
+                        <label for="sothich7">du lịch</label></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="gửi thông tin"></td>
+                    <td><input type="reset" value="nhập lại"/></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
     </form>
 </div>
 
