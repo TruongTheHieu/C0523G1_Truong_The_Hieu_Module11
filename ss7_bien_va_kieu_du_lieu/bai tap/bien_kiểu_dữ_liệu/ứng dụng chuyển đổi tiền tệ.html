@@ -6,7 +6,7 @@
 </head>
 <body>
 <form>
-    <table
+    <table>
            <tr>
                <th>Amount</th>
                <th width="50px"></th>
@@ -15,29 +15,37 @@
                <th>To Currency</th>
            </tr>
     <tr>
-    <th><input type="text" id="nhapvao"/>
+    <th><input type="text" id="Amount"/>
     </th>
     <th width="50px"></th>
     <th>
-        <select name="" id="1">
+        <select name="" id="quocgia1">
             <option value="Viet Nam">Viet Nam</option>
             <option value="USA">USA</option>
         </select>
     </th>
     <th width="50px"></th>
         <th>
-            <select name="" id="2">
+            <select name=""id="quocgia2">
                 <option value="USA">USA</option>
                 <option value="vnd">VND</option>
             </select>
         </th>
     <td>
-        <button style="background-color: blueviolet" >convert </button>
+        <button  style="background-color: darkviolet">convert</button>
+
     </td>
     </tr>
+        <tr>
+            <td>
+                <p onclick="convert()"></p>
+            </td>
+        </tr>
 </table>
 </form>
+<script>
 
-
+</script>
 </body>
+
 </html>
