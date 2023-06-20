@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tính cân nặng</title>
 </head>
 <body>
-$END$
+<h4>tình trạng cân năng của mi</h4>
+<script>
+    let weight = prompt('can nang cua ban la:');
+    let height = prompt('chieu cao cua ban la:');
+    let bmi =  (weight/ height * height);
+
+    if (bmi<18.5)
+        result = document.write("thiếu cân cần ăn vô");
+    else if (bmi < 25.0)
+        result = document.write("bình thường");
+    else if (bmi <30.0)
+        result = document.write("thừa cân");
+    else
+        result = document.write("béo");
+    document.getElementById("result").innerHTML=result;
+
+</script>
 </body>
 </html>
