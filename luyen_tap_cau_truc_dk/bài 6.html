@@ -9,15 +9,15 @@
     let dso = prompt("nhập doanh số bán hàng");
 
     if (dso <10000000){
-       HH = parseInt ((dso)*3/100);
+       HH = parseInt ((dso)*0.03);
        alert(" doanh số là " + dso + "hoa hồng sẽ nhận được là"+ HH );
      }
     else if (dso<30000000) {
-        HH = parseInt((dso)*5/100);
+        HH = parseInt((dso)*0.05);
         alert(" doanh số là"+ dso + "hoa hồng sẽ nhận được là"+ HH  );
     }
     else if (dso>30000000) {
-        HH = parseInt((dso)*7/100);
+        HH = parseInt((dso)*0.07);
         alert(" doanh số là" + dso +"hoa hồng sẽ là"+ HH );
     }
 </script>
