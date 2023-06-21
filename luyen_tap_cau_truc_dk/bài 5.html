@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+    let dkiemtra = prompt("nhập điểm kiểm tra");
+    let dtgiuaky = prompt("nhập điểm thi giữa kỳ");
+    let dtcuoiky = prompt("nhập điểm thi cuối kỳ");
+    let diemtb = (dkiemtra*dtgiuaky*dtcuoiky/3)
+
+    if (diemtb < 5) {
+        alert("xếp loại yếu")
+    }
+    else if (diemtb <6 ){
+        alert("xếp loại trung bình")
+    }
+    else if (diemtb <8){
+        alert("xếp loại khá")
+    }
+    else if (diemtb >8){
+        alert("xếp loại giỏi")
+    }
+</script>
+
+</body>
+</html>
