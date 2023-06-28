@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body><button type="button" onclick="in_tam_giac()">Bài 3 </button>
+<script>
+    function in_tam_giac() {
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j <= i; j++) {
+                let sao = "*"
+                document.write(sao)
+            }
+            document.write('<br>')
+        }
+        document.write('<br><br>')
+        for (let i = 5; i > 0; i--) {
+            for (let j = 0; j < i; j++) {
+                let sao = "*"
+                document.write(sao)
+            }document.write('<br>')
+        }
+    }
+</script>
+
+</body>
+</html>

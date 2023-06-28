@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<script>
+    let n=prompt('nhập dãy số cần in')
+    let first=0
+    let last=1
+    let fibo; // fibo = f + l
+
+   for (let i=0;i<=n;i++) {
+       fibo = first + last;
+    first=last;
+    last=fibo;
+    document.write(fibo+';')
+   }
+</script>
+</body>
+</html>
