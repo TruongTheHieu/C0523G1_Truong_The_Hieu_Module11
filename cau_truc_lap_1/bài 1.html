@@ -6,18 +6,16 @@
 </head>
 <body>
 <script>
-    document.write('<table border="2"')
-    for (let a=1;a<=10;a++) {
-        document.write('<tr>');
-
-        for(let b=2;b<=9;b++) {
-            document.write("<td></br>"+b + 'x' + a + '='+(b*a)+"</td>");
-         }
-        document.write('</tr <br>');
+    let soBatDau = parseInt(prompt('Nhập số bắt đầu'));
+    let soCuoiCung = parseInt(prompt('Nhập số cuối cùng'));
+    let i = soBatDau;
+    let j = soCuoiCung;
+    for (i; i < j; i++ ) {
+        document.write(" "+i);
     }
-    document.write('</table')
 
-
+    document.write(' Đã Hoàn thành');
 </script>
+
 </body>
 </html>
