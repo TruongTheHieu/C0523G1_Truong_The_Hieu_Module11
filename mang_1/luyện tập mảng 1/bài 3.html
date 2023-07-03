@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    debugger
+    let a = [10,0,9,65,56,7,6,8,9,6]
+    let max = a[0]
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i]
+        if (max < a[i]){
+            max = a[i];
+        }
+    }
+    let aver = sum/a.length;
+    document.write("Arr["+a+"]")
+    document.write("<br>Max: "+max)
+    document.write("<br>Average: " + aver)
+</script>
+
+</body>
+</html>
