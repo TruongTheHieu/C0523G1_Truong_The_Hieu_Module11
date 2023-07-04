@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+    var arr = ['a', 'n', 'h', '2', '0', '0', '4'];
+    var count = 0;
+
+    for (var i = 0; i < arr.length; i++) {
+        if (!isNaN(arr[i])) {
+            count++;
+        }
+    }
+    // Đầu ra: ký tự số trong mảng
+    document.getElementById("demo").innerHTML = count;
+</script>
+
+</body>
+</html>
