@@ -6,8 +6,13 @@
 </head>
 <body>
 <script>
-    let tiengui = +prompt("nhập số tiền gữi");
-    let lãi = tiengui*
+    let sotien=+prompt("Nhập số tiền ban đầu:");
+    let sothang=+prompt("Nhập số tháng tính lãi:");
+    for(i=0; i<sothang; i++){
+        sotien=sotien+sotien *0.3/100;
+    }
+    document.write("Số tiền có được sau khi lãi là:"+sotien+"VNĐ");
+
 </script>
 
 </body>
