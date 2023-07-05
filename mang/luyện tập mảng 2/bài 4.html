@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập chuỗi")
+    let temp = +prompt("Nhập từ muốn ktr");
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (temp.includes(a[i])){
+            count++
+        }
+        else if (temp != a){
+            alert("không có trong chuỗi");
+        }
+    }
+    console.log("Chuỗi "+a+" có "+temp)
+</script>
+
+</body>
+</html>
