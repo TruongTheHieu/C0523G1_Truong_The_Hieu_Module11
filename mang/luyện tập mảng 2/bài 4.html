@@ -6,19 +6,12 @@
 </head>
 <body>
 <script>
-    let a = +prompt("Nhập chuỗi")
-    let temp = +prompt("Nhập từ muốn ktr");
+    let a = prompt("Nhập chuỗi")
     let count = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (temp.includes(a[i])){
-            count++
-        }
-        else if (temp != a){
-            alert("không có trong chuỗi");
-        }
+    for (let i = 0; i < a.length ; i++) {
+        count++
     }
-    console.log("Chuỗi "+a+" có "+temp)
+    document.write("chuỗi" +a+ "có"+count + "từ");
 </script>
-
 </body>
 </html>
