@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.
+ Gọi hàm vừa xây dựng được.-->
+<body>
+<script>
+    let N=+prompt('nhập số nguyên bất kì');
+    function tinh(N) {
+        let result =1;
+        for (let i = 1; i <= N ; i++) {
+            result = result*i
+        }
+return result
+    }
+    document.write(N + 'giải thừa là :'+ tinh(N))
+</script>
+
+</body>
+</html>
