@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì,
+ thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    let a = +prompt("nhập a:");
+    let b = +prompt("nhập b");
+    function change(a,b) {
+        let temp = a;
+        a=b;
+        b=temp;
+        document.write(("<br>"+a+""+b))
+    }
+    document.write(a+ ""+b)
+    change(a,b)
+
+</script>
+
+</body>
+</html>
