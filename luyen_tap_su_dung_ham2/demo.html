@@ -7,13 +7,19 @@
 <body>
 
 <script>
-    debugger
-    function changeValuePassByReference(funcNum) {
-        funcNum[5] = 1;
-    }
-    let num = new Array(10);
-    changeValuePassByReference(num);
-    console.log("result"+ num);
+   let person = {
+       name: ['anh','em'],
+       age: 19,
+       gander: 'male',
+       interests:['music','code'],
+       bio: function () {
+           alert(this.name[0] + '' + this.name[1] + 'is' + this.age + 'years old.He likes' + this.inrerests[0] + 'and' + this.interests[1] + '.');
+       },
+       greeting:function () {
+           alert('Hi! I\'m' + thich.name[0]+'.');
+       }
+   };
+   person.bio()
 </script>
 </body>
 </html>
