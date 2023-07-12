@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body> <p><h1>hỏilạitutol</h1></p>
+<body>
 <script>
-    let name = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
-    let Star = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let name = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
 
-
-    }
+    function check(star) {
+        for (let i = 0; i < name.length; i++) {
+            if (name[i] == star) {
+                return arr2[i];     
+            } else {
+                alert('bạn nhập sai');
+            }
+        }
+    }let a = prompt("nhập tên:")
+    alert(check(a));
 </script>
 
 </body>
